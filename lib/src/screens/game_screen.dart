@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/src/helpers/classes/board.dart';
 
-class Menu extends StatefulWidget {
-  const Menu({Key? key}) : super(key: key);
+class GameScreen extends StatefulWidget {
+  const GameScreen({Key? key}) : super(key: key);
 
   @override
-  _MenuState createState() => _MenuState();
+  _GameScreenState createState() => _GameScreenState();
 }
 
-class _MenuState extends State<Menu> {
+class _GameScreenState extends State<GameScreen> {
   Board board = Board.empty();
   int cells = 3;
 
@@ -93,7 +93,7 @@ class _MenuState extends State<Menu> {
                   flex: 3,
                   child: IconButton(
                     onPressed: () {
-                      if (cells > 1)
+                      if (cells > 2)
                         setState(() {
                           cells--;
                           board = Board.empty(cells);

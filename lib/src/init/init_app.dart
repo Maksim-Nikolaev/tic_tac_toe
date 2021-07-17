@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tic_tac_toe/src/screens/menu.dart';
+import 'package:tic_tac_toe/src/screens/game_screen.dart';
 
 class InitApp extends StatelessWidget {
   @override
@@ -10,7 +10,7 @@ class InitApp extends StatelessWidget {
         primarySwatch: Colors.blue,
 
       ),
-      home: Menu(),
+      home: GameScreen(),
     );
   }
 }
